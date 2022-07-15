@@ -10,10 +10,22 @@ net_session = metaxploit.net_use( address, port )
 if not net_session then exit("Error: can't connect to net session")
 metaLib = net_session.dump_lib
 
+attacker = get_shell
+
 //new code
 Q = function()
+    get_shell.start_terminal
+end function
 
-       end function
+mainGui = function()
+end function
+
+Tscan = function()
+end function
+
+Rshell = function()
+end function
+
 
 
 
