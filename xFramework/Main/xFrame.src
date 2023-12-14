@@ -1,4 +1,4 @@
-if params.len != 2 or params[0] == "-h" or params[0] == "--help" then exit("<b>Usage: "+program_path.split("/")[-1]+" [ip_address] [port]</b>")
+if params.len != 3 or params[0] == "-h" or params[0] == "--help" then exit("<b>Usage: "+program_path.split("/")[-1]+" [ip_address] [port]</b>")
 metaxploit = include_lib("/lib/metaxploit.so")
 if not metaxploit then
     metaxploit = include_lib(current_path + "/metaxploit.so")
@@ -17,7 +17,29 @@ Q = function()
     get_shell.start_terminal
 end function
 
+T = function()
+    get_shell.host_computer.start_terminal
+end function
+
 mainGui = function()
+    print ("$$$                             $$$$$$$$$$$         $$$$$$$$$$$$$$$         ")
+    print ("$$$$$$$$$$$$$$$$$$             $$$$$$$$$$$$$        $$$$$$$$$$$$$$$         ")
+    print ("$$$$$$$$$$$$$$$$$$$$$$        $$$$$     $$$$$       $$$$$                   ")
+    print ("$$$$$            $$$$$       $$$$$                  $$$$$                   ")
+    print ("$$$$$            $$$$$      $$$$$                   $$$$$$$$$               ")
+    print ("$$$$$            $$$$$      $$$$$                   $$$$$$$$$               ")
+    print ("$$$$$$$$$$$$$$$$$$          $$$$$                   $$$$$                   ")
+    print ("$$$$$$$$$$$$$$$$$$          $$$$$                   $$$$$                   ")
+    print ("$$$$$            $$$$$      $$$$$                   $$$$$                   ")
+    print ("$$$$$            $$$$$       $$$$$                  $$$$$                   ")
+    print ("$$$$$            $$$$$        $$$$$     $$$$$       $$$$$                   ")
+    print ("$$$$$            $$$$$         $$$$$$$$$$$$$        $$$$$                   ")
+    print ("$$$$$            $$$$$          $$$$$$$$$$$         $$$$$                   ")
+    print ("                                                                            ")
+    print ("                                                                            ")
+    print ("|--------------------------------------------------------------------------|")
+    print ("| Create By: pla1dra1dMen12 as fun project                                 |")
+    print ("|--------------------------------------------------------------------------|")
 end function
 
 Tscan = function()
